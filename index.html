@@ -1,83 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Beautiful Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav ul {
-            padding: 0;
-            list-style-type: none;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        section {
-            margin: 2em 5%;
-            padding: 1em;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background-color: #333;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nithish Dasari | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #fff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .skill {
+      text-align: center;
+      background: #e6f0ff;
+      padding: 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Jenkins Tutorial</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Nithish Dasari</h1>
+    <p>Aspiring Developer | Tech Enthusiast | Blogger</p>
+  </header>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>This is the home section of the webpage.</p>
-    </section>
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I’m Nithish Dasari, an eager and inquisitive B.Tech Computer Science student at the Institute of Aeronautical Engineering, Hyderabad. With interests in programming, blogging, and front-end development, I strive to thrive in environments that challenge my skills and push me to innovate.</p>
+    </div>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>Learn more about us in this section.</p>
-    </section>
+    <div class="card">
+      <h2>Education</h2>
+      <p>B.Tech in Computer Science<br />Institute of Aeronautical Engineering, 2025</p>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Get in touch with us here.</p>
-    </section>
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Java (Basics)</div>
+      </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Beautiful Webpage</p>
-    </footer>
+    <div class="card">
+      <h2>Projects</h2>
+      <h3>Smart Mobile Application for Health Management</h3>
+      <p>A mobile app designed to enhance the health management system by streamlining user interaction and accessibility for health monitoring and support.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:nithishdasari955@gmail.com">nithishdasari955@gmail.com</a></p>
+      <p><strong>Phone:</strong> 9550982967</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nithish-dasari-64a5aa280/" target="_blank">Nithish Dasari</a></p>
+    </div>
+  </section>
 </body>
 </html>
